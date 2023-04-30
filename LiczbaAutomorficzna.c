@@ -2,10 +2,20 @@
 #include <math.h>
 #include <stdbool.h>
 
+int IntLength(int A){
+    int L=0;
+    while (A>0){
+        A=A/10;
+        L++;
+    }
+    return L;
+}
+
 bool test(int A){
+
     int B = pow(A,2);
-    B = B%10;
-    
+    int C = pow(10,IntLength(A));
+    B = B%C; 
     if(B==A){
         return true;
         }

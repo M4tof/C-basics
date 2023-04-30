@@ -10,11 +10,6 @@ typedef struct Towar_t
     int Cena1Sztuki;
 };
 
-typedef struct TablicaTowarow_t{
-    Towar DaneTowaru;
-    TablicaTowarow *Nastepny;
-};
-
 
 
 

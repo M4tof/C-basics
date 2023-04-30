@@ -29,16 +29,21 @@ void Count_Numbers(FILE* origianl,FILE* new_file){
         }
     }
     fprintf(new_file,"SUMA:");
+    printf("SUMA:");
     for(int i=0;i<maxim;i++){
         int A_int;
         A_int = (int) Suma[i];
         fprintf(new_file," %d",A_int);
+        printf(" %d",A_int);
     }
     fprintf(new_file,"\n");
+    printf("\n");
 
     fprintf(new_file,"SREDNIA:");
+    printf("SREDNIA:");
     for(int g=0;g<maxim;g++){
         fprintf(new_file," %.2lf",(Suma[g]/Licznosc[g]));
+        printf(" %.2lf",(Suma[g]/Licznosc[g]));
     }
 }
 

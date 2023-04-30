@@ -11,7 +11,7 @@ void convertFile(FILE* origianl,FILE* new_file){
     while(fgets(line,100,origianl)!=NULL){
         int i=0;
         while(line[i]=='*'){
-            i++;
+            i++;               
         }
 
         int level=i-1;

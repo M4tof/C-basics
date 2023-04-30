@@ -29,6 +29,10 @@ void Adder(int Place){
     strcpy(TablicaTowarow[Place].NazwaTowaru, Name);
     TablicaTowarow[Place].LiczbaSztuk = Liczba;
     TablicaTowarow[Place].CenaSztuki = Price;
+
+    free(Name);
+    free(Liczba);
+    free(Price);
 }
 
 void submain(){
@@ -76,8 +80,9 @@ void submain(){
 }
 
 int main(){
-
+    printf("[N-new, W-Equipment, R-Sum of inventory, Q-quit]\n");
     submain();
     printf("Closing now");
+
     return 0;
 }

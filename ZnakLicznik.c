@@ -19,7 +19,7 @@ int main(){
 
     char Scieszka[100];
     printf("Podaj scieszke do pliku : ");
-    scanf(" %s",Scieszka);
+    scanf(" %s",Scieszka); // C:\....\test.txt
 
     printf("\n");
     
